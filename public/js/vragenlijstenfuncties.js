@@ -1,5 +1,5 @@
 let Airtable = require('airtable');
-let base = new Airtable({apiKey: 'keyuetdWfJNfnETjx'}).base('appm7NLJ5kxLKv76C');
+let base = new Airtable({apiKey: 'apikey'}).base('basekey');
 let htmlcode = '';
 let SubListNr = 1, nummer = 0, countID = 0, vraagNr = 0;
 let lijstNummer = 1, lengteTabel = 0;
