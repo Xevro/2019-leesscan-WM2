@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body {
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #333;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: left;
+    background-color: #FAF9F7;
+}
+
+h1 {
+    font-weight: 300;
+    margin: 0;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.header {
+    overflow: hidden;
+    padding: 1.4rem 10px;
+    float: right;
+}
+
+.header .logo {
+    height: 60px;
+}
+
+#Titel, #vraag {
+    font-size: 1.2rem;
+}
+
+#vraag {
+    padding-top: 10px;
+}
+
+#Titel {
+    padding-top: 50px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#titel p {
+    font-weight: bold;
+}
+
+.lijstNaam {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+#volgendeForm {
+    margin-top: 100px;
+}
+
+#volgende {
+    float: right;
+}
+
+input[type=checkbox] + label {
+    display: inline-block;
+    margin: 0.3em;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #474746;
+    border-radius: 0.3em;
+    display: inline-block;
+    height: 1.2rem;
+    width: 1.2rem;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.4em;
+    color: transparent;
+    transition: 0.4s;
+}
+
+.checkboxForm {
+    margin-bottom: 30px;
+    margin-top: 35px;
+    border-radius: 20px;
+    width: fit-content;
+    height: 50px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: 0 3px 27px -12px #777;
+}
+
+
+input[type=checkbox] + label:active:before {
+    transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+    background-color: #F21B42;
+    border-color: #F21B42;
+    color: #fff;
+}
+
+.question {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.checkbox input {
+    margin-left: 10px;
+}
+
+
+button, input {
+    font-size: 22px;
+    background-color: #F21B42;
+    color: #fff;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 3px;
+    padding: 1rem;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+button:hover, input:hover {
+    background-color: #f55875;
+}
+
+.message--error {
+    display: none;
+    padding-top: 10px;
+    font-size: 18px;
+    color: #c00;
+}
+
+@media screen and (max-width: 500px) {
+    p {
+        font-size: 16px;
+    }
+
+    input[type=checkbox] + label:before {
+        content: "";
+        border: 0.1em solid #474746;
+        border-radius: 0.3em;
+        display: inline-block;
+        height: 0.8rem;
+        width: 0.8rem;
+        padding-left: 0;
+        padding-bottom: 0.12em;
+        margin-right: 0.2em;
+        color: transparent;
+        transition: 0.4s;
+    }
+
+    .checkboxForm {
+        margin-bottom: 30px;
+        margin-top: 25px;
+        border-radius: 12px;
+        height: 40px;
+        padding-top: 8px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    .message--error {
+        padding-top: 30px;
+        font-size: 16px;
+    }
+
+    button, input {
+        font-size: 18px;
+        padding: 0.9rem;
+        margin-bottom: 18px;
+    }
+
+    header {
+        display: none;
+    }
+}
+

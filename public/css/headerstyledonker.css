@@ -1,0 +1,56 @@
+.header {
+    overflow: hidden;
+    padding: 1.4rem 10px;
+}
+
+.header #link {
+    float: left;
+    color: #222;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-align: center;
+    padding: 9px 20px 9px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    line-height: 25px;
+    border-radius: 9px;
+}
+
+.hide {
+    display: none;
+}
+
+.header .logo {
+    height: 70px;
+}
+
+.header #link:hover {
+    background-color: #F21B42;
+    color: white;
+}
+
+.header #link.active {
+    font-weight: bold;
+    background-color: #F21B42;
+    color: white;
+}
+
+.header-right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .header #link {
+        float: none;
+        display: block;
+        width: auto;
+        margin-left: 0;
+        text-align: left;
+    }
+    .header-right {
+        float: none;
+    }
+    .hide {
+        display: none;
+    }
+}

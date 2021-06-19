@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Leesscan vragenplatform">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Leesscan Project</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon-leesscan.png">
+    <link href="css/loginstyle.css" rel="stylesheet" type="text/css">
+    <link href="css/footerstylelicht.css" rel="stylesheet" type="text/css">
+    <link href="css/headerstylelicht.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+{{> header }}
+
+<div class="contactform">
+    <div class="TitleLogin">
+        <h2>Help ons mee het leesbeleid vorm te geven.</h2>
+    </div>
+
+    <form id="InfoForm">
+        <div class="formGegevens">
+            <p>Persoonlijke gegevens</p>
+            <label for="Voornaam">Voornaam</label>
+            <input type="text" name="Voornaam" value="" required="required" id="Voornaam" class="textinput" aria-label="Voornaam" placeholder="Voornaam"/>
+            <span class="message--error" id="errVoornaam"> </span>
+            <label id="lblAchternaam" for="Achternaam">Achternaam</label>
+            <input type="text" name="Achternaam" value="" required="required" id="Achternaam" class="textinput" aria-label="Achternaam" placeholder="Achternaam"/>
+            <span class="message--error" id="errAchternaam"> </span>
+
+            <div class="checkboxesSchool">
+                <p class="message">Geef uw status binnen de school omgeving:</p>
+                <label for="qstLeerkracht" class="label--checkbox"><input type="checkbox" class="Schoolkeuze" name="Schoolkeuze" value="LEERKRACHT" id="qstLeerkracht"/>Leerkracht</label>
+                <label for="qstZorgleerkracht" class="label--checkbox"><input type="checkbox" class="Schoolkeuze" name="Schoolkeuze" value="ZORGLEERKRACHT" id="qstZorgleerkracht"/>Zorgleerkracht/zorgcoördinator</label>
+                <label for="qstVakleerkracht" class="label--checkbox"><input type="checkbox" class="Schoolkeuze" name="Schoolkeuze" value="VAKLEERKRACHT" id="qstVakleerkracht"/>Vakleerkracht
+                    (godsdienst, beweging, ...)</label>
+                <label for="qstDirectieteam" class="label--checkbox"><input type="checkbox" class="Schoolkeuze" name="Schoolkeuze" value="DIRECTIE" id="qstDirectieteam"/>Beleidsondersteuner/lid
+                    van het directieteam</label>
+                <span class="message--error" id="errSchool"> </span>
+                <p class="message">Kies een van onderstaande niveau’s:</p>
+                <label for="qstSchool" class="label--chckbox"><input type="checkbox" name="Niveau" class="Niveau" value="school" id="qstSchool"/>Schoolniveau</label>
+                <label for="qstKlas" class="label--checbox"><input type="checkbox" name="Niveau" class="Niveau" value="klas" id="qstKlas"/>Klasniveau</label>
+                <select id="qstKlasKeuze" required>
+                    <option selected="selected" value="0">kies een klas...</option>
+                    <option value="1KL">1ste kleuterklas</option>
+                    <option value="2KL">2de kleuterklas</option>
+                    <option value="2KL">3de kleuterklas</option>
+                    <option value="1LJ">1ste Leerjaar</option>
+                    <option value="2LJ">2de Leerjaar</option>
+                    <option value="3LJ">3de Leerjaar</option>
+                    <option value="4LJ">4de Leerjaar</option>
+                    <option value="5LJ">5de Leerjaar</option>
+                    <option value="6LJ">6de Leerjaar</option>
+                </select>
+                <span class="message--error" id="errNiveau"> </span>
+                <p class="message">Hoeveel vragenlijsten wilt u invullen?</p>
+                <div class="vragenlijstAantal">
+                    <label for="qstAantal1" class="label--checkbox"><input type="checkbox" class="AantalInvullen" id="qstAantal1" value="1" name="AantalInvullen"/>1</label>
+                    <label for="qstAantal2" class="label--checkbox"><input type="checkbox" class="AantalInvullen" id="qstAantal2" value="2" name="AantalInvullen"/>2</label>
+                    <label for="qstAantal3" class="label--checkbox"><input type="checkbox" class="AantalInvullen" id="qstAantal3" value="3" name="AantalInvullen"/>3</label>
+                    <label for="qstAantal4" class="label--checkbox"><input type="checkbox" class="AantalInvullen" id="qstAantal4" value="4" name="AantalInvullen"/>4</label>
+                    <label for="qstAantal5" class="label--checkbox"><input type="checkbox" class="AantalInvullen" id="qstAantal5" value="5" name="AantalInvullen"/>5</label>
+                </div>
+                <span class="message--error" id="errAantalInvullen"> </span>
+            </div>
+        </div>
+
+        <div class="Schoolgegevens">
+            <p>Schoolgegevens</p>
+            <label for="SchoolNaam" class="label--checkbox">Schoolnaam</label>
+            <input type="text" name="schoolnaam" value="" required="required" class="textinput" id="SchoolNaam"
+                   aria-label="Schoolnaam" placeholder="schoolnaam"/>
+            <span class="message--error" id="errSchoolNaam">&nbsp;</span>
+            <label for="StraatNummer" class="label--checkbox">Straatnaam en nummer</label>
+            <input type="text" name="Straatnr" value="" required="required" class="textinput" id="StraatNummer"
+                   aria-label="Straatnr" placeholder="Straatnr"/>
+            <span class="message--error" id="errStraat">&nbsp;</span>
+            <label for="Postcode" class="label--checkbox">Postcode</label>
+            <input type="text" name="Postcode" value="" required="required" class="textinput" id="Postcode"
+                   aria-label="Postcode" placeholder="Postcode"/>
+            <span class="message--error" id="errPostcode">&nbsp;</span>
+            <label for="Gemeente" class="label--checkbox">Gemeente</label>
+            <input type="text" name="Gemeente" value="" required="required" class="textinput" id="Gemeente"
+                   aria-label="Gemeente" placeholder="Gemeente"/>
+            <span class="message--error" id="errGemeente">&nbsp;</span>
+            <div class="send-knop">
+                <input type="submit" id="btnSubmit" name="btnSubmit" aria-label="Start leesscan" class="Button" value="Start leesscan"/>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="infoLijsten">
+    <h2>Leesscan informatie</h2>
+    <p>Deze leesscan website is een samenwerking tussen de opleiding ICT en het studiegebied onderwijs.
+        Internationale testen tonen aan dat de leesvaardigheid én het leesplezier van de leerlingen daalt.
+        Scholen moeten dus prioriteit maken van een leesbeleid.</p>
+    <p>Met deze leesscan kunnen we scholen ondersteunen om een leesbeleid op te starten en op te volgen. Het resultaat zal mogelijks
+        (gedeeltelijk) gebruikt worden in een lopend onderzoeksproject.</p>
+    <p>
+        De applicatie gaat aan de hand van een 5-delige vragenlijst in kaart brengen hoe het
+        leesbeleid van jou (leerkracht) is tov. de klas. De lijst kan ook worden afgenomen op schoolniveau,
+        dan krijgt men een beeld hoe het beleid is over de school. Per vragenlijst scoort de leerkracht een punt.
+        Dit punt komt tot stand door een gemiddelde van alle vragen per subtitel te berekenen.
+    </p>
+    <div class="lijsten">
+        <h4>Beschikbare lijsten</h4>
+        <p>De vragenlijsten zullen gaan over onderstaande onderwerpen en zullen worden gevraagd zoals opgegeven in onderstaande volgorde.</p>
+
+        <div class="schoolLijst">
+            <div class="inhoud">
+                <div class="school">
+                    <h5>School lijsten</h5>
+                    <ol>
+                        <li>Begrijpend Lezen</li>
+                        <li>Leesbeleidplan</li>
+                        <li>Leesomgeving Schoolniveau</li>
+                        <li>Leesmonitoring Schoolniveau</li>
+                        <li>Leesnetwerk Schoolniveau</li>
+                    </ol>
+                </div>
+                <div>
+                    <h5>Klas lijsten</h5>
+                    <ol>
+                        <li>Begrijpend Lezen</li>
+                        <li>Leesbeleidplan</li>
+                        <li>Leesomgeving Klasniveau</li>
+                        <li>Leesmonitoring Klasniveau</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{> footer }}
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="js/airtable.browser.js"></script>
+<script src="js/loginfuncties.js"></script>
+</body>
+</html>

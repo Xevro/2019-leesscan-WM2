@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Leesscan vragenplatform Contact formulier">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Contact</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon-leesscan.png">
+    <link href="css/contactstyle.css" rel="stylesheet" type="text/css">
+    <link href="css/footerstyledonker.css" rel="stylesheet" type="text/css">
+    <link href="css/headerstyledonker.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+{{> header }}
+<div class="contactInhoud">
+    <div class="contactform">
+        <form id="contactform">
+            <div class="info">
+                <h1>Contact</h1>
+                <p>Heb je vragen of wens je meer info?</p>
+                <p>Twijfel dan niet en geef ons gerust een seintje via onderstaand formulier.</p>
+            </div>
+            <p>Naam</p>
+            <input type="text" name="Voornaam" id="contactNaam" required="required" class="textinput" aria-label="Voornaam" placeholder="Voornaam"/>
+            <span class="message--error" id="errNaam">&nbsp;</span>
+            <p>Email adres</p>
+            <input type="email" name="email" id="contactEmail" class="emailField" required="required" aria-label="Email adres" placeholder="E-mail adres"/>
+            <span class="message--error" id="errEmail">&nbsp;</span>
+            <p>Bericht</p>
+            <textarea name="message" id="bericht" rows="5" cols="40" required="required" aria-label="Tekstveld bericht" placeholder="Bericht..."></textarea>
+            <div class="send-knop">
+                <input type="submit" id="btnSubmit" name="btnSubmit" aria-label="Verstuur formulier" class="Button"
+                       value="Verstuur"/>
+            </div>
+            <div id="resultMessage"></div>
+        </form>
+        <div class="fotoquote">
+            <img src="img/psychology-of-words.jpg" alt="psychology of words">
+            <p>Door Luis Rubén de Borbón, B.Sc.</p>
+        </div>
+    </div>
+</div>
+
+{{> footer }}
+
+<script src="js/contactfuncties.js"></script>
+</body>
+</html>

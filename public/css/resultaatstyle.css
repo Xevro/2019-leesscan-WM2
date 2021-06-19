@@ -1,0 +1,37 @@
+.grafieken {
+    margin-top: 30px;
+}
+
+.grafieken h2 {
+    margin-top: 40px;
+}
+
+.titel {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.opslaan p {
+    padding-top: 10px;
+}
+
+input[type=submit], #deelLink {
+    margin-right: 15px;
+    background-color: #F21B42;
+    color: white;
+    text-decoration: none;
+    border: none;
+    margin-top: 1.3rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 4px;
+    padding: 0.625rem 3.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+input[type=submit]:hover, #deelLink:hover {
+    background-color: rgba(242, 27, 66, 0.7);
+}

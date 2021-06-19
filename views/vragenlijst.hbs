@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Leesscan Project</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/icon-leesscan.png">
+    <link href="css/vragenstyle.css" rel="stylesheet" type="text/css">
+    <link href="css/footerstyledonker.css" rel="stylesheet" type="text/css">
+    <link href="css/headerstyledonker.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+{{> header }}
+<div id="Titel"></div>
+<p>Geef aan op een schaal van 1 t.e.m. 5 in welke mate de stellingen van toepassing zijn. (0: niet van toepassing, 1: doe ik nooit, 2: doe ik niet, maar zou wel willen 3: doe ik soms, 4: doe ik regelmatig, 5: is een vast onderdeel
+    van mijn klaspraktijk)</p>
+
+<div id="InfoForm">
+    <div id="keuze"></div>
+    <input id="volgende" type="button" onclick="incrementValue();" value="Volgende vraag"/>
+    <span class="message--error" id="errVragen">&nbsp;</span>
+</div>
+{{> footer }}
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="js/airtable.browser.js"></script>
+<script src="js/vragenlijstenfuncties.js"></script>
+</body>
+</html>

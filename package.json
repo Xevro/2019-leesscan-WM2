@@ -1,0 +1,21 @@
+{
+  "name": "leesscan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/lees",
+    "dev": "nodemon src/app"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chart": "^0.1.2",
+    "chart.js": "^2.9.3",
+    "express": "^4.17.1",
+    "html2canvas": "^1.0.0-rc.5",
+    "path": "^0.12.7",
+    "print-js": "^1.0.63",
+    "sequelize": "^5.21.11"
+  }
+}

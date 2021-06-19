@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Description" content="Leesscan vragenplatform">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leesscan Resultaten</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/img/icon-leesscan.png">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/resultaatstyle.css">
+    <link rel="stylesheet" href="/css/footerstyledonker.css">
+    <link rel="stylesheet" href="/css/headerstyledonker.css">
+</head>
+<body>
+{{> header }}
+<div class="titel">
+    {{title}}
+</div>
+
+<div class="opslaan">
+    <p>Bedankt om ons mee te helpen met het leesbeleid beter in kaart te brengen!
+        U hebt de mogelijkheid om de resultaten op te slaan en of door te sturen.</p>
+    <p>met onderstaande knoppen kunt u de gegevens van de leesscan opslaan als een document (PDF) of als afbeelding in png formaat.</p>
+    <input type="submit" id="export-png" name="btnExportPNG" aria-label="Sla op als png" class="Button" value="Opslaan als png"/>
+    <input type="submit" id="export-pdf" name="btnExportPDF" aria-label="Sla op als pdf" class="Button" value="Opslaan als pdf"/>
+    <a id="deelLink" aria-label="Deel resultaten" class="Button">Deel resultaten</a>
+</div>
+<main>
+    <div class="grafieken" id="myCanvas">
+        <h2>Subresultaten per vragenlijst</h2>
+        <p>Onderstaande grafiek toont de score van de vragenlijsten per vraag.</p>
+        <div id="grafiekSubresultaten"></div>
+        <h2>Totaal resultaat voor de vragenlijsten</h2>
+        <p>Onderstaande grafiek toont het totaal resultaat van de ingevulde leesscan vragenlijsten.</p>
+        <div id="grafiekTotaalLijsten"></div>
+    </div>
+</main>
+
+{{> footer }}
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/series-label.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+<script src="https://code.highcharts.com/modules/accessibility.js"></script>
+<script src="/js/resultaten.js"></script>
+</body>
+</html>

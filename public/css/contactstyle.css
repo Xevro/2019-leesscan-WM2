@@ -1,0 +1,97 @@
+body {
+    background-color: #fcfcfc;
+}
+
+input[type=text], input[type=email], select, textarea {
+    margin-top: 10px;
+    width: 380px;
+    display: flex;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-image: -webkit-linear-gradient(top, #FFF, #EEE);
+    background-image: linear-gradient(top, #FFF, #EEE);
+}
+
+input[type=submit] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #F21B42;
+    color: white;
+    border: none;
+    margin-top: 2.5rem;
+    border-radius: 4px;
+    padding: 0.625rem 3.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(242, 27, 66, 0.7);
+}
+
+textarea {
+    resize: none;
+}
+
+.message--error {
+    display: none;
+    padding-top: 10px;
+    font-size: 15px;
+    color: #c00;
+}
+
+.info p:last-of-type {
+    margin-bottom: 50px;
+}
+
+#resultMessage {
+    color: #0db52c;
+}
+
+.contactform {
+    display: inline-flex;
+}
+
+.fotoquote img {
+    display: flex;
+    height: 370px;
+    margin-top: 40px;
+    margin-left: 130px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    box-shadow: 0 3px 27px -12px #777;
+}
+
+.fotoquote p {
+    display: flex;
+    margin-left: 130px;
+}
+
+@media screen and (max-width: 850px) {
+    input[type=text], input[type=email], select, textarea {
+        width: 250px;
+    }
+
+    .contactform {
+        display: block;
+    }
+
+    .fotoquote img {
+        display: flex;
+        height: 200px;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .fotoquote p {
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+html {
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-size: 20px;
+    color: #333;
+    padding-left: 7%;
+    padding-right: 7%;
+    text-align: left;
+    height: 100%;
+    background-color: rgb(250, 249, 247);
+    background: url('../img/coverfoto_home.png') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.TitleLogin h2 {
+    color: white;
+    font-size: 2.7rem;
+    padding-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p {
+    margin-top: 10px;
+}
+
+input {
+    margin-top: 13px;
+}
+
+#InfoForm {
+    display: flex;
+    opacity: 0.93;
+    width: 735px;
+    background-color: white;
+    font-size: 19px;
+    border-radius: 10px;
+    padding-top: 4px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+}
+
+#InfoForm p:first-child {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 24px;
+}
+
+#InfoForm .checkboxesSchool p {
+    font-size: 18px;
+    margin: 0;
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+input[type=text], select {
+    width: 220px;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-image: -webkit-linear-gradient(top, #FFF, #EEE);
+    background-image: linear-gradient(top, #FFF, #EEE);
+}
+
+input[type=submit] {
+    background-color: #F21B42;
+    color: white;
+    border: none;
+    margin-top: 2.5rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 4px;
+    padding: 0.625rem 3.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(242, 27, 66, 0.7);
+}
+
+label {
+    display: block;
+    padding-top: 10px;
+    font-size: 1.1rem;
+}
+
+#lblAchternaam {
+    padding-top: 10px;
+}
+
+.formGegevens {
+    width: 435px;
+}
+
+.checkboxesSchool select {
+    font-size: 1rem;
+    color: #222;
+    line-height: 1.4rem;
+    display: none;
+    margin-top: 20px;
+    width: 250px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: .5em;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E"), linear-gradient(to bottom, #fff 0%, #e5e5e5 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+
+.vragenlijstAantal {
+    display: flex;
+}
+
+.vragenlijstAantal label {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+input, select {
+    display: block;
+    width: 100%;
+}
+
+input[type=checkbox], input[type=submit] {
+    margin-right: 1rem;
+    width: auto;
+}
+
+input[type=checkbox] {
+    display: inline;
+    margin-right: 10px;
+}
+
+.message--error {
+    display: none;
+    padding-top: 10px;
+    font-size: 15px;
+    color: #c00;
+}
+
+.invalid {
+    box-shadow: 0 0 3px 0 rgba(227, 64, 100, 0.8);
+}
+
+.valid {
+    box-shadow: 0 0 3px 0 rgba(64, 227, 100, 0.8);
+}
+
+.infoLijsten {
+    font-size: 1.1rem;
+    color: #222;
+    margin: 110px 0;
+    opacity: 0.93;
+    padding-top: 20px;
+    padding-left: 30px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.infoLijsten p {
+    padding-right: 40px;
+    text-align: justify;
+}
+
+.infoLijsten .lijsten h4 {
+    margin-bottom: 0;
+}
+
+.infoLijsten .lijsten h5 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.infoLijsten .lijsten {
+    margin-bottom: 50px;
+}
+
+.schoolLijst .inhoud {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.schoolLijst .school {
+    margin-right: 50px;
+}
+
+@media (max-width: 800px) {
+    .formGegevens {
+        width: auto;
+        float: none;
+    }
+
+    .formGegevens {
+        padding-bottom: 40px;
+    }
+
+    #InfoForm {
+        display: block;
+        width: auto;
+        padding-right: 30px;
+        min-width: 340px;
+        background-color: white;
+        font-size: 19px;
+        border-radius: 10px;
+        padding-top: 4px;
+        padding-left: 30px;
+        padding-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    body {
+        margin: 0;
+        padding-left: 0;
+    }
+
+    #InfoForm {
+        width: auto;
+        padding-right: 3px;
+        min-width: 300px;
+        font-size: 19px;
+        border-radius: 10px;
+        padding-top: 4px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+    }
+}
